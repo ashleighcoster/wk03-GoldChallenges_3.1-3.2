@@ -10,3 +10,15 @@
 */
 
 //NOTE: Write your code below and push back to your github branch.  SUBMIT YOUR GITHUB URL IN CANVAS
+
+document.querySelector(".button").addEventListener("onclick", setVar);
+
+
+function setVar() {
+    let store = document.getElementById('store').value;
+    let product = document.getElementById('product').value;
+    let quantity = document.getElementById('quantity').value;
+
+    document.write(`I shopped at ${store} for ${quantity} ${product}!`);
+}
+
