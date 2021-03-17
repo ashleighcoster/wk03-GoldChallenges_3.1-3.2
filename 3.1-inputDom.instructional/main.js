@@ -13,12 +13,17 @@
 
 document.querySelector(".button").addEventListener("onclick", setVar);
 
-
 function setVar() {
     let store = document.getElementById('store').value;
     let product = document.getElementById('product').value;
     let quantity = document.getElementById('quantity').value;
 
-    document.write(`I shopped at ${store} for ${quantity} ${product}!`);
+    console.log(`I shopped at ${store} for ${quantity} ${product}!`);
+
+      
+     // document.write(`I shopped at ${store} for ${quantity} ${product}!`);
 }
+
+
+document.querySelector("p").innerHTML = setVar();
 
